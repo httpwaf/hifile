@@ -29,6 +29,8 @@ Ubuntu 23.04+
 Fedora 36+
 
 ...
+
+编译环境需要gcc、make，先用apt install libelf-dev或者yum install  elfutils-libelf-devel安装好依赖库后，
 用root用户，直接make运行./file-tamper即可，默认保护/root/目录文件不被篡改，可以用rm或者vi编辑修改/root/下的文件，将报错。
 
 
