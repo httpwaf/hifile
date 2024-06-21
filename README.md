@@ -19,13 +19,14 @@ hifile是一款基于Linux的开源文件防篡改软件，对目录文件保护
 
 #### 三、系统内核要求
 要求内核版本大于5.10，推荐2023年以后的linux发行版本：
+
 Debian 12+
 
 RHEL 9.0+
 
 Ubuntu 23.04+
 
-Fedora 33+
+Fedora 36+
 
 ...
 用root用户，直接make运行./file-tamper即可，默认保护/root/目录文件不被篡改，可以用rm或者vi编辑修改/root/下的文件，将报错。
