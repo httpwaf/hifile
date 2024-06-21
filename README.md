@@ -28,7 +28,7 @@ Ubuntu 23.04+
 Fedora 33+
 
 ...
-
+用root用户，直接make运行./file-tamper即可，默认保护/root/目录文件不被篡改，可以用rm或者vi编辑修改/root/下的文件，将报错。
 
 
 #### 四、商业版演示地址
