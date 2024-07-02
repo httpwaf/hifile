@@ -24,7 +24,7 @@ Debian 12+
 
 RHEL 9.0+
 
-Ubuntu 23.04+
+Ubuntu 22.04+ (需要编辑/etc/default/grub文件的一行GRUB_CMDLINE_LINUX="lsm=ndlock,lockdown,yama,integrity,apparmor,selinux,bpf" 然后运行update-grub2更新重启系统）
 
 Fedora 36+
 
