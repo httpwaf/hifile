@@ -33,10 +33,24 @@ Fedora 36+
 编译环境需要gcc、make，先用apt install libelf-dev或者yum install  elfutils-libelf-devel安装好依赖库后，
 用root用户，直接make运行./file-tamper即可，默认保护/root/目录文件不被篡改，可以用rm或者vi编辑修改/root/下的文件，将报错。
 
+商业版集成到全流量防火墙防御系统OpenHFw中，支持Linux x86 64位系统（内核大于5.0），保证可以上网，以root权限运行下面命令：
+
+    1、 wget http://101.42.31.94/openhfw
+    2、 chmod +x ./openhfw
+    3、 ./openhfw
+
+首次安装下载大约半分钟，出现System is running.....代表安装成功，可以WEB管理口9998（防火墙允许）登录进去。
+
+#### 五、运行停止卸载
+启动运行:  ./openhfw         后台模式运行:   ./openhfw daemon
+
+停止运行:  ./openhfw stop    卸载 :   rm  /openhfw/ -rf
+
+默认没加开机启动，请自行把openhfw 加入开机启动程序。
 
 #### 四、商业版演示地址
 
-商业版集成到openhfw，演示地址 [http://101.42.31.94:9998/ok.html](http://101.42.31.94:9998/ok.html)
+商业版演示地址 [http://101.42.31.94:9998/ok.html](http://101.42.31.94:9998/ok.html)
 
 #### 五、源码部署请加微信号httpwaf
 
